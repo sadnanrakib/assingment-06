@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-color: rgba(97, 100, 100, 0.603);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo{
+    color: brown;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+    color: brown;
+    
+    
+}
+nav ul li{
+    display: inline-block;
+    line-height :80px;
+    margin: 0 7px;
+    font-size: 20px;
+    padding-left: 20px;
+    
+}
