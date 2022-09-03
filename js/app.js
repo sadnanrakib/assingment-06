@@ -55,10 +55,10 @@ function getElement(selector, isAll = false) {
           
             <div class="News mb-3 align-Newss-center border shadow-lg p-3 mb-5 bg-body rounded">
             <div class="row g-0">
-              <div class="col-md-4">
+              <div class="col-md-4 col-sm-12">
                 <img src="${card.thumbnail_url}" class="img-fluid rounded-start w-100" alt="...">
               </div>
-              <div class="col-md-8">
+              <div class="col-md-8 col-sm-12">
                 <div class="News-body px-4 mt-5">
                   <h5 class="News-title">${card.title}</h5>
                   <p class="News-text">${card.details.slice(0,250)}</p>
