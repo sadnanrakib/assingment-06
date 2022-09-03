@@ -1,14 +1,4 @@
-function getElement(selector, isAll = false) {
-    if (!isAll) {
-      return document.querySelector(selector);
-    } else {
-      return document.querySelectorAll(selector);
-    }
-  }
-  
-  let newsHolder = [];
-  let categoryName = "";
-  let sortedNews = false;
+
   // added categories News
   fetch("https://openapi.programming-hero.com/api/news/categories")
     .then((res) => res.json())
@@ -42,7 +32,22 @@ function getElement(selector, isAll = false) {
       setValue(newsHolder, categoryName);
     }
   };
-  
+
+  let newsHolder = [];
+  let categoryName = "";
+  let sortedNews = false;
+
+
+   function getElement(selector, isAll = false) {
+        if (!isAll) {
+          return document.querySelector(selector);
+        } else {
+          return document.querySelectorAll(selector);
+        }
+      }
+
+
+      
   // display all news
   const displayAllNews = (data, category_name) => {
     getElement(".news-container").innerHTML = "";
